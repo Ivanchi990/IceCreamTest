@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".pregunta1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="217dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="28dp"
+        android:text="Pregunta-1"
+        android:textSize="125px"
+        app:layout_constraintBottom_toTopOf="@+id/preg1"
+        app:layout_constraintEnd_toEndOf="@+id/preg1"
+        app:layout_constraintStart_toStartOf="@+id/preg1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="119dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/res1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Primavera" />
+
+        <RadioButton
+            android:id="@+id/res2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verano" />
+
+        <RadioButton
+            android:id="@+id/res3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otoño" />
+
+        <RadioButton
+            android:id="@+id/res4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invierno" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/preg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="236dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginBottom="257dp"
+        android:text="¿Juanpe favorita?"
+        android:textAlignment="center"
+        android:textSize="100px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="119dp"
+        android:onClick="comprobarPreg1"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">concurso3</string>
+
+    <string-array name="bebidas">
+        <item>Café</item>
+        <item>Té</item>
+        <item>Agua</item>
+        <item>Coca-Cola</item>
+    </string-array>
+</resources>
